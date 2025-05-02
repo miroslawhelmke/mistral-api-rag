@@ -11,7 +11,7 @@ dependencies = [
     "pycryptodome",
     "nbconvert",
     "protobuf==3.20.3",
-    "pysqlite3-binary"
+    # "pysqlite3-binary", # Needed for Streamlit Cloud (Linux), add manually to requirements.txt
 ]
 
 [dependency-groups]
