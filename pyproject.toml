@@ -10,7 +10,8 @@ dependencies = [
     "llama-index-vector-stores-chroma",
     "pycryptodome",
     "nbconvert",
-    "protobuf==3.20.3"
+    "protobuf==3.20.3",
+    "pysqlite3-binary"
 ]
 
 [dependency-groups]

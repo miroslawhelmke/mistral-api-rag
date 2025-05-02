@@ -1,3 +1,14 @@
+import sys
+
+# Patch sqlite3 for ChromaDB compatibility on Streamlit Cloud
+# Based on https://docs.trychroma.com/troubleshooting#sqlite
+try:
+    __import__("pysqlite3")
+    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+    print("Successfully patched sqlite3 with pysqlite3.") # Optional: Add print for confirmation
+except ImportError:
+    print("pysqlite3 not found, skipping patch.") # Optional: Print if not found (e.g., local dev)
+
 import time
 
 import streamlit as st
