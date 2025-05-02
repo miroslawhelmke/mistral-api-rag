@@ -441,8 +441,6 @@ python-dotenv==1.1.0
     #   uvicorn
 pytz==2025.2
     # via pandas
-pywin32==310
-    # via jupyter-core
 pyyaml==6.0.2
     # via
     #   chromadb
