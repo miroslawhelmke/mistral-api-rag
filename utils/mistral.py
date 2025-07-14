@@ -6,7 +6,7 @@ from llama_index.core import Settings
 import utils.logs as logs
 
 # Define default models - check Mistral AI documentation for latest/recommended models
-DEFAULT_MISTRAL_MODEL = "mistral-large-latest"
+DEFAULT_MISTRAL_MODEL = "mistral-small-latest"
 DEFAULT_MISTRAL_EMBEDDING = "mistral-embed"
 
 def get_mistral_api_key():
